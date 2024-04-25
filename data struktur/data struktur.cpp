@@ -120,7 +120,6 @@ void searchData() {
 		system("cls");
 		return;
 	}
-	
 	else {
 		int nim;
 		cout << "Masukan NIM: ";
@@ -130,6 +129,15 @@ void searchData() {
 			if (currentNode->noMhs == nim) {
 				cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name << endl;
 				return;
+			}
+			currentNode = currentNode->next;
+		}
+		cout << "Data tidak ditemukan" << endl;
+	}
+}
+
+
+	
 
 
 
